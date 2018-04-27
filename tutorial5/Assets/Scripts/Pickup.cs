@@ -18,7 +18,7 @@ public class Pickup : MonoBehaviour {
 	void Update () {
 		
 	}
-    void OnMouseDown() //mouse clicked
+    void OnMouseDrag() //mouse clicked
     {
         rb.useGravity = false;
         rb.transform.position = onhand.transform.position;

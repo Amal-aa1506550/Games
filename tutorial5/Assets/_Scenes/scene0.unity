@@ -1297,12 +1297,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1208741657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8760ebe2e0934b41b6f741cfab7fef8, type: 3}
+  m_Script: {fileID: 11500000, guid: 60a3e69e05d5e408ead8c0aa9cc18e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireball: {fileID: 54841612221077966, guid: 98fcf889a41864d409f16c575a4c24a5, type: 2}
-  moveSpeed: 80
-  power: 100
+  moveSpeed: 10
+  power: 70
   shootSFX: {fileID: 8300000, guid: 4e2085ea83c454bd0ad881819ef13482, type: 3}
 --- !u!82 &1208741662
 AudioSource:
