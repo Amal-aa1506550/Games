@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireballLuncher : MonoBehaviour {
-
+public class Shooter : MonoBehaviour {
 	public Rigidbody fireball;
 	public float moveSpeed=80.0f;
 	public float power=100.0f;
@@ -15,8 +14,8 @@ public class FireballLuncher : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		float h = Input.GetAxis ("Fire2")*Time.deltaTime * moveSpeed;
-		float v = Input.GetAxis ("Fire2") * Time.deltaTime* moveSpeed;
+		float h = Input.GetAxis ("Mouse X")*Time.deltaTime * moveSpeed;
+		float v = Input.GetAxis ("Mouse Y") * Time.deltaTime* moveSpeed;
 		transform.Translate (h,v,0);
 		if (Input.GetButtonDown ("Fire2")){
 			Rigidbody instant = Instantiate (fireball, transform.position, transform.rotation) as Rigidbody;
@@ -38,5 +37,4 @@ public class FireballLuncher : MonoBehaviour {
 			}//shootif
 
 		}//if
-	}
-}
+	}}
